@@ -19,7 +19,7 @@ h1 {
     width: 70%;
     margin: auto;
     text-align: justify;
-    padding: 10px;
+    padding: 35px 0;
 }
 
 h2 {
@@ -27,8 +27,21 @@ h2 {
     padding: 5% 0 2.5%;
 }
 
+h3 {
+    font-size: 22px;
+    margin: 60px 10px 10px 0;
+}
+
 ul {
     list-style-type: none;
+}
+
+.bottone {
+    text-decoration: none;
+    background-color: rgb(34, 82, 241);
+    text-align: center;
+    margin:0 150px 50px 0;
+    padding: 10px;
 }
 
 /*header nav*/
@@ -73,8 +86,6 @@ li {
 /*jumbotron*/
 header section {
     padding-top: 100px;
-    /*debug*/
-    min-height: 800px;
     background-color: lightblue;
 }
 
@@ -82,31 +93,22 @@ header section {
     display: flex;
     width: 70%;
     margin: auto;
-
-    /*debug*/
-    background-color: pink;
 }
 
 .jumbotron .paragrafo {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 25%;
-
-    /*debug*/
-    background-color: blanchedalmond;
-    border: 1px solid black;
-    min-height: 500px;
+    align-content: space-between;
+    width: 30%;
 }
 
 .jumbotron .immagine {
     margin-left: 5%;
-    width: 70%;
+    width: 65%;
+}
 
-    /*debug*/
-    background-color: aquamarine;
-    border: 1px solid black;
-    min-height: 500px;
+.jumbotron p {
+    padding-bottom: 35px;
 }
 
 /*main*/
@@ -133,17 +135,17 @@ main section .row {
 .row .col{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: calc((100% / 3) - 30px);
 
     /*debug*/
-    background-color: rebeccapurple;
     min-height: 1000px;
-    border: 1px solid black;
+    border: 1px solid rgb(167, 165, 165);
 }
 
-.col span {
+[target="piano-business"] {
     text-align: center;
-    border: 1px solid black;
+    border-bottom: 1px solid rgb(167, 165, 165);
     padding: 10px 0;
 }
 
@@ -160,6 +162,10 @@ main section .row {
     min-height: 300px;
 }
 
+.container-professional {
+    margin: 2% 25px;
+}
+
 /*seconda sezione*/
 
 .container-dropbox {
@@ -168,21 +174,15 @@ main section .row {
 }
 
 .container-dropbox .immagine {
-    width: calc(65% - 5%);
-
-    /*debug*/
-    background-color: aqua;
-    min-height: 500px;
-    border: 1px solid black;
+    width: calc(60% - 5%);
 }
 
 .container-dropbox .testo {
-    width: 35%;
+    width: 40%;
+}
 
-    /*debug*/
-    background-color: aqua;
-    min-height: 500px;
-    border: 1px solid black;
+.container-dropbox .testo p {
+    margin: 20px 120px 50px 0;
 }
 
 /*terza sezione*/
@@ -326,4 +326,25 @@ footer {
 [target="grey"] {
     color: grey;
     cursor: pointer;
+}
+
+[target="dimensioni"] {
+    width: 100%;
+}
+
+[target="freccia"] {
+    font-size: 40px;
+    color: black;
+    padding-top: 40px;
+}
+
+[target="bottone-nav"] {
+    margin: 0;
+    color: white;
+}
+
+[target="bottone-sez-2"] {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
 }
