@@ -9,3 +9,63 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
+
+h1 {
+    font-size: 60px;
+}
+
+/*header nav*/
+header nav {
+    display: flex;
+
+    /*debug*/
+    min-height: 100px;
+    background-color: pink;
+    border-bottom: 1px solid black;
+
+}
+
+header .nav-sinistra, .nav-destra {
+    width: 50%;
+    
+    /*debug*/
+    background-color: red;
+    border: 1px solid black;
+}
+
+/*jumbotron*/
+header section {
+    /*debug*/
+    min-height: 800px;
+    background-color: lightblue;
+}
+
+.jumbotron {
+    display: flex;
+    width: 80%;
+    margin: auto;
+
+    /*debug*/
+    background-color: pink;
+    min-height: 800px;
+}
+
+.jumbotron .pragrafo {
+    display: flex;
+    width: 30%;
+
+    /*debug*/
+    background-color: aquamarine;
+    border: 1px solid black;
+    min-height: 500px;
+}
+
+.jumbotron .immagine {
+    display: flex;
+    width: 50%;
+
+    /*debug*/
+    background-color: aquamarine;
+    border: 1px solid black;
+    min-height: 500px;
+}
