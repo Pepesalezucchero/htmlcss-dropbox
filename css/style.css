@@ -7,7 +7,7 @@
 
 :root {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h1 {
@@ -42,30 +42,38 @@ header section {
 
 .jumbotron {
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: auto;
 
     /*debug*/
     background-color: pink;
-    min-height: 800px;
 }
 
-.jumbotron .pragrafo {
+.jumbotron .paragrafo {
     display: flex;
-    width: 30%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25%;
 
     /*debug*/
-    background-color: aquamarine;
+    background-color: blanchedalmond;
     border: 1px solid black;
     min-height: 500px;
 }
 
 .jumbotron .immagine {
-    display: flex;
-    width: 50%;
+    margin-left: 5%;
+    width: 70%;
 
     /*debug*/
     background-color: aquamarine;
     border: 1px solid black;
     min-height: 500px;
+}
+
+h1 {
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
 }
