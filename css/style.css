@@ -154,6 +154,14 @@ main section .row {
     padding: 10px 0;
 }
 
+.sezione-acquisti .col .container {
+    margin: 35px;
+}
+
+.sezione-acquisti .col li::after {
+content: "\f007";
+}
+
 .container-extra {
     display: flex;
     margin: 3% 0;
