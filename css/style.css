@@ -72,7 +72,7 @@ header nav ul {
     display: flex;
 }
 
-li {
+header li, footer li {
     cursor: pointer;
 }
 
@@ -158,8 +158,73 @@ main section .row {
     margin: 35px;
 }
 
-.sezione-acquisti .col li::after {
-content: "\f007";
+.sezione-acquisti .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sezione-acquisti .container span {
+    line-height: 200%;
+}
+
+.sezione-acquisti .container ul {
+    padding-top: 20px;
+}
+
+.sezione-acquisti .container li{
+    padding-bottom: 20px;
+}
+
+#user::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f007";
+    font-weight: 900;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; 
+    margin-right: 5px;
+}
+
+#folder::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f07b";
+    font-weight: 900;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 5px;
+}
+
+#share::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f1e0";
+    font-weight: 900;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 5px;
+}
+
+#bottone-colonne-centrali {
+    margin: 50px 0;
+    padding: 0 30px;
+    
+}
+
+.container .bordo{
+    border: 1px solid rgb(167, 165, 165);
+    margin: 40px 200px 40px 0;
+}
+
+#checkmark::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 5px;
+    color: blue;
 }
 
 .container-extra {
