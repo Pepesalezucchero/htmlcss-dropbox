@@ -213,11 +213,13 @@ main section .row {
 .container-team-sx, .container-team-centro, .container-team-dx {
     display: flex;
     width: calc(100% / 3);
-
-    /*debug*/
-    border: 1px solid black;
     min-height: 600px;
 
+}
+
+.container-team-sx {
+    justify-content: center;
+    align-items: center;
 }
 
 .sez-4-container-extra {
@@ -255,55 +257,59 @@ main section .row {
 }
 
 .container-team-centro {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(167, 165, 165);
+}
+
+.container-team-centro .bordo {
+    margin: 0 450px 50px 60px ;
+    border-top: 1px solid black;
+}
+
+.container-team-centro .testo {
+    margin: 0 60px 50px 60px;
+}
+
+[target="quadratini"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 300px;
 }
 
 .qdt-verde {
     background-color: green;
-    width: 50%;
-    height: 300px;
+    border: 5px solid rgb(58, 230, 58);
 }
 
 .qdt-marrone {
     background-color: brown;
-    width: 50%;
-    height: 300px;
 }
 
 .qdt-celeste {
     background-color: lightskyblue;
-    width: 50%;
-    height: 300px;
 }
 
 .qdt-arancione {
     background-color: orange;
-    width: 50%;
-    height: 300px;
 }
 
 .qdt-rosso {
     background-color: red;
-    width: 50%;
-    height: 300px;
 }
 
 .qdt-celeste-chiaro {
     background-color: lightblue;
-    width: 50%;
-    height: 300px;
 }
 
 .qdt-blu {
     background-color: blue;
-    width: 50%;
-    height: 300px;
 }
 
 .qdt-giallo {
     background-color: yellow;
-    width: 50%;
-    height: 300px;
 }
 
 /*footer*/
@@ -312,7 +318,7 @@ footer {
 }
 
 .nav-row {
-    padding: 100px 0;
+    padding: 50px 0;
     display: flex;
     width: 70%;
     margin: auto;
@@ -382,5 +388,14 @@ footer {
 
 [target="font-awesome"] {
     font-size: 10px;
-    padding-left: 400px;
+    padding-left: 37%;
+}
+
+[target="loghi-team"] {
+    width: 50%;
+}
+
+[target="logo-team-centro"] {
+    width: 40%;
+    margin: 10%;
 }
