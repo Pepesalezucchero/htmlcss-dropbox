@@ -229,12 +229,35 @@ main section .row {
 
 .container-extra {
     display: flex;
+    flex-direction: column;
     margin: 3% 0;
-
-    /*debug*/
-    background-color: blueviolet;
-    border: 1px solid black;
+    border: 1px solid rgb(167, 165, 165);
     min-height: 300px;
+}
+
+.row-team {
+    display: flex;
+    margin: 25px;
+}
+
+.col-team {
+    width: 75%;
+}
+
+.col-team h4{
+    margin-bottom: 30px;
+}
+
+.col-team p {
+    margin-bottom: 60px;
+}
+
+.col-team-bottone {
+    width: 25%; 
+}
+
+.col-team-bottone a {
+    margin: 25px;
 }
 
 /*seconda sezione*/
