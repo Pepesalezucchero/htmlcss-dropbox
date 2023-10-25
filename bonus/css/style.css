@@ -559,3 +559,22 @@ header nav li:hover {
 .domanda:active .risposta-hover {
     display: block;
 }
+
+
+
+/*prova*/
+.animazione {
+    animation: animazione 5s forwards;
+}
+
+@keyframes animazione {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(10px); 
+        opacity: 1;
+    }
+}
