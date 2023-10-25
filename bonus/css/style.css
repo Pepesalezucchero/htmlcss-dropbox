@@ -74,7 +74,8 @@ ul {
 }
 
 [target="bottone-nav"] {
-    margin: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
     color: white;
 }
 
@@ -409,7 +410,6 @@ main section .row {
 
 .qdt-verde {
     background-color: green;
-    border: 20px solid rgb(58, 230, 58);
 }
 
 .qdt-marrone {
@@ -484,4 +484,75 @@ footer {
     width: 10%;
     margin: 0 75% 0 15%;
     border-top: 1px solid grey;
+}
+
+
+
+
+/*bonus*/
+
+/*hover liste e pulsanti*/
+header nav li:hover {
+    border-bottom: 1px solid black;
+}
+
+.bottone:hover {
+    filter: opacity(0.8);
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+/*hover quadrati colorati team*/
+.qdt-verde:hover {
+    transition: all 1s ease-out;
+    border: 20px solid rgb(58, 230, 58);
+}
+
+.qdt-marrone:hover {
+    transition: all 1s ease-out;
+    border: 20px solid rgb(185, 93, 93);
+}
+
+.qdt-celeste:hover {
+    transition: all 1s ease-out;
+    border: 20px solid rgb(205, 242, 255);
+}
+
+.qdt-arancione:hover {
+    transition: all 1s ease-out;
+    border: 20px solid rgb(218, 166, 70);
+}
+
+.qdt-rosso:hover {
+    transition: all 1s ease-out;
+    border: 20px solid rgb(250, 74, 74);
+}
+
+.qdt-celeste-chiaro:hover {
+    transition: all 1s ease-out;
+    border: 20px solid rgb(217, 231, 236);
+}
+
+.qdt-blu:hover {
+    transition: all 1s ease-out;
+    border: 20px solid rgb(30, 83, 255);
+}
+
+.qdt-giallo:hover {
+    transition: all 1s ease-out;
+    border: 20px solid rgb(236, 236, 94);
+}
+
+/*domande*/
+.domanda {
+    position: relative;
+    cursor: pointer;
+}
+
+.risposta-hover {
+    position: absolute;
+    display:none
+}
+
+.domanda:hover .risposta-hover {
+    display: block;
 }
