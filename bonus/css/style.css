@@ -143,6 +143,9 @@ header li, footer li {
 header section {
     padding-top: 100px;
     background-color: lightblue;
+
+    /*bonus*/
+    max-height: 720px;
 }
 
 .jumbotron {
@@ -553,6 +556,6 @@ header nav li:hover {
     display:none
 }
 
-.domanda:hover .risposta-hover {
+.domanda:active .risposta-hover {
     display: block;
 }
